@@ -1,0 +1,38 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "start": "npx tailwindcss -i ./resources/FE/input.css -o ./resources/FE/css/output.css --watch",
+        "beranda": "npx tailwindcss -i ./resources/FE/input.css -o ./resources/FE/css/beranda.css --watch",
+        "alur": "npx tailwindcss -i ./resources/FE/input.css -o ./resources/FE/css/alur.css --watch",
+        "alur-peminjamanbarang": "npx tailwindcss -i ./resources/FE/input.css -o ./resources/FE/css/alur-peminjamanbarang.css --watch",
+        "alur-peminjamanruang": "npx tailwindcss -i ./resources/FE/input.css -o ./resources/FE/css/alur-peminjamanruang.css --watch",
+        "saidata": "npx tailwindcss -i ./resources/FE/input.css -o ./resources/FE/css/saidata.css --watch",
+        "profile": "npx tailwindcss -i ./resources/FE/input.css -o ./resources/FE/css/profile.css --watch",
+        "organigram": "npx tailwindcss -i ./resources/FE/input.css -o ./resources/FE/css/organigram.css --watch",
+        "navbar": "npx tailwindcss -i ./resources/FE/input.css -o ./resources/FE/css/navbar.css --watch",
+        "kritik": "npx tailwindcss -i ./resources/FE/input.css -o ./resources/FE/css/kritik.css --watch",
+        "kabar": "npx tailwindcss -i ./resources/FE/input.css -o ./resources/FE/css/kabar.css --watch",
+        "kabarpage": "npx tailwindcss -i ./resources/FE/input.css -o ./resources/FE/css/kabarpage.css --watch",
+        "arsip": "npx tailwindcss -i ./resources/FE/input.css -o ./resources/FE/css/arsip.css --watch",
+        "subarsip": "npx tailwindcss -i ./resources/FE/input.css -o ./resources/FE/css/subarsip.css --watch",
+        "beasiswa": "npx tailwindcss -i ./resources/FE/input.css -o ./resources/FE/css/beasiswa.css --watch",
+        "sebaran": "npx tailwindcss -i ./resources/FE/input.css -o ./resources/FE/css/sebaran.css --watch",
+        "alumni": "npx tailwindcss -i ./resources/FE/input.css -o ./resources/FE/css/alumni.css --watch"
+    },
+    "devDependencies": {
+        "@popperjs/core": "^2.11.6",
+        "@vitejs/plugin-vue": "^4.0.0",
+        "autoprefixer": "^10.4.14",
+        "axios": "^1.1.2",
+        "bootstrap": "^5.2.3",
+        "laravel-mix": "^6.0.49",
+        "laravel-vite-plugin": "^0.7.2",
+        "postcss": "^8.4.23",
+        "sass": "^1.56.1",
+        "tailwindcss": "^3.3.2",
+        "vite": "^4.0.0",
+        "vue": "^3.2.37"
+    }
+}

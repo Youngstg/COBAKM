@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alur Sistem</title>
+    <!-- <link href="./../css/alur.css" rel="stylesheet"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./../tailwindconfig.js"></script>
+</head>
+
+<body class="bg-black-100">
+    <main class="mx-auto h-screen">
+        <!-- Jumbotron -->
+        <section class="h-96 md:h-[50vh] bg-half-eclips bg-no-repeat bg-bottom md:bg-eclips-beranda md:bg-right lg:bg-right-top aspect-square relative w-full md:mb-14">
+
+            <h1 class="text-neutral-white text-4xl leading-relaxed px-5 font-bold absolute inset-0 flex items-center justify-center text-center">
+                Alur Sistem
+            </h1>
+
+        </section>
+        <section class="container m-auto items-center">
+            <article class="grid grid-cols-1 md:grid-cols-3 md:-mt-10">
+                <a class="bg-orange-100 py-12 text-neutral-white mt-10 mx-8 rounded-lg text-center md:mx-3 md:mt-5 md:grid-rows-1 md:text-3xl hover:-translate-y-3 hover:bg-black cursor-pointer"
+                    id="btnUKT" onclick="openModal('.modalUKT')">Banding UKT</a>
+                <a class="bg-yellow-100 py-12 text-neutral-white mt-5 mx-8 rounded-lg text-center md:mx-3 md:grid-rows-1 md:text-3xl hover:-translate-y-3 hover:bg-black cursor-pointer"
+                    id="btnpikr" onclick="openModal('.modalpikr')">PIK - R</a>
+                <a class="bg-black-75 py-12 text-neutral-white mt-5 mx-8 rounded-lg text-center md:mx-3 md:grid-rows-1 md:text-3xl hover:-translate-y-3 hover:bg-black cursor-pointer"
+                    id="btnsukma" onclick="openModal('.modalsukma')">Sukma KM ITERA</a>
+                <a href="alur-peminjamanruang.html"
+                    class="bg-orange-100 py-12 text-neutral-white mt-5 mx-8 rounded-lg text-center md:mx-3 md:grid-rows-2 md:hidden">Peminjaman
+                    Ruangan</a>
+                <a href="alur-peminjamanbarang.html"
+                    class="bg-yellow-100 py-12 text-neutral-white mt-5 mx-8 rounded-lg text-center md:mx-3 md:grid-rows-2 md:hidden">Peminjaman
+                    Barang</a>
+            </article>
+            <article class="hidden md:grid grid-cols-2">
+                <a href="alur-peminjamanruang.html"
+                    class="bg-orange-100 text-3xl py-12 text-neutral-white mt-5 mx-8 rounded-lg text-center md:mx-3 md:col-span-1 hover:-translate-y-3 hover:bg-black cursor-pointer">Peminjaman
+                    Ruangan</a>
+                <a href="alur-peminjamanbarang.html"
+                    class="bg-yellow-100 text-3xl py-12 text-neutral-white mt-5 mx-8 rounded-lg text-center md:mx-3 md:col-span-1 hover:-translate-y-3 hover:bg-black cursor-pointer">Peminjaman
+                    Barang</a>
+            </article>
+        </section>
+
+
+        <!-- MODAL YGY -->
+        <section
+            class="modalUKT hidden fixed top-40 md:top-30 left-1/2 -translate-x-1/2 z-40  pb-4 items-center justify-center">
+            <article
+                class="bg-black-100 rounded-lg overflow-hidden shadow-lg shadow-[rgb(137, 148, 67)] transform transition-all  border-2 border-yellow-100 w-max md:px-56">
+                <div class="flex px-6 pt-4 pb-4 rounded-t-lg justify-center items-center">
+                    <h2 class="text-white text-lg font-semibold text-center md:text-3xl">Banding UKT</h2>
+                </div>
+                <div class="px-40 py-40 bg-black-100 flex justify-center">
+                </div>
+                <div class="px-5 py-5 bg-black-100 flex justify-evenly ">
+                    <button
+                        class="modalUKT-close text-white bg-black-50 font-bold py-2 px-8 rounded-lg hover:bg-[rgb(137,148,67)] hover:shadow-md hover:shadow-[rgb(137, 148, 67)] focus:outline-none focus:shadow-outline-blue active:bg-zinc-300 hover:text-red-600"
+                        onclick="closeModal('.modalUKT')">Close</button>
+                    <button
+                        class="submit bg-yellow-100 font-bold py-2 px-8 rounded-lg hover:bg-[rgb(137,148,67)] hover:shadow-md hover:shadow-[rgb(137, 148, 67)] focus:outline-none focus:shadow-outline-blue active:bg-zinc-300 hover:text-red-600">Label</button>
+                </div>
+            </article>
+        </section>
+        <section
+            class="modalpikr hidden fixed top-40 md:top-30 left-1/2 -translate-x-1/2 z-40  pb-4 items-center justify-center">
+            <article
+                class="bg-black-100 rounded-lg overflow-hidden shadow-lg shadow-[rgb(137, 148, 67)] transform transition-all border-2 border-yellow-100 w-max md:px-56">
+                <div class="flex px-6 pt-4 pb-4 rounded-t-lg justify-center items-center">
+                    <h2 class="text-white text-lg font-semibold text-center md:text-3xl">PIK-R</h2>
+                </div>
+                <div class="px-40 py-40 bg-black-100 flex justify-center">
+                </div>
+                <div class="px-5 py-5 bg-black-100 flex justify-evenly ">
+                    <button
+                        class="modalpikr-close text-white bg-black-50 font-bold py-2 px-8 rounded-lg hover:bg-[rgb(137,148,67)] hover:shadow-md hover:shadow-[rgb(137, 148, 67)] focus:outline-none focus:shadow-outline-blue active:bg-zinc-300 hover:text-red-600"
+                        onclick="closeModal('.modalpikr')">Close</button>
+                    <button
+                        class="submit bg-yellow-100 font-bold py-2 px-8 rounded-lg hover:bg-[rgb(137,148,67)] hover:shadow-md hover:shadow-[rgb(137, 148, 67)] focus:outline-none focus:shadow-outline-blue active:bg-zinc-300 hover:text-red-600">Label</button>
+                </div>
+            </article>
+        </section>
+        <div class="overlay hidden z-20 bg-black/70 absolute top-0 left-0 h-[150vh] w-screen" onclick="closeAllModal()">
+        </div>
+        <section
+            class="modalsukma hidden fixed top-40 md:top-30 left-1/2 -translate-x-1/2 z-40  pb-4 items-center justify-center">
+            <article
+                class="bg-black-100 rounded-lg overflow-hidden shadow-lg shadow-[rgb(137, 148, 67)] transform transition-all border-2 border-yellow-100 w-max md:px-56">
+                <div class="flex px-6 pt-4 pb-4 rounded-t-lg justify-center items-center">
+                    <h2 class="text-white text-lg font-semibold text-center md:text-3xl">Sukma KM-ITERA</h2>
+                </div>
+                <div class="px-40 py-40 bg-black-100 flex justify-center">
+                </div>
+                <div class="px-5 py-5 bg-black-100 flex justify-evenly ">
+                    <button
+                        class="modalsukma-close text-white bg-black-50 font-bold py-2 px-8 rounded-lg hover:bg-[rgb(137,148,67)] hover:shadow-md hover:shadow-[rgb(137, 148, 67)] focus:outline-none focus:shadow-outline-blue active:bg-zinc-300 hover:text-red-600"
+                        onclick="closeModal('.modalsukma')">Close</button>
+                    <button
+                        class="submit bg-yellow-100 font-bold py-2 px-8 rounded-lg hover:bg-[rgb(137,148,67)] hover:shadow-md hover:shadow-[rgb(137, 148, 67)] focus:outline-none focus:shadow-outline-blue active:bg-zinc-300 hover:text-red-600">Label</button>
+                </div>
+            </article>
+        </section>
+
+    </main>
+    <script>
+        function openModal(e) {
+            let target = document.querySelector(e);
+            let overlay = document.querySelector('.overlay');
+            target.classList.remove("hidden");
+            overlay.classList.remove("hidden");
+        }
+
+        function closeModal(e) {
+            let target = document.querySelector(e);
+            let overlay = document.querySelector('.overlay');
+            overlay.classList.add("hidden");
+            target.classList.add("hidden");
+        }
+
+        function closeAllModal() {
+            document.querySelector(".modalUKT").classList.add('hidden');
+            document.querySelector(".modalpikr").classList.add('hidden');
+            document.querySelector(".modalsukma").classList.add('hidden');
+            let overlay = document.querySelector('.overlay');
+            overlay.classList.add("hidden");
+        }
+
+    </script>
+</body>
+
+</html>

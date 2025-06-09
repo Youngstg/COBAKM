@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alur Sistem \ Peminjaman Barang</title>
+    <!-- <link href="./../css/alur-peminjamanbarang.css" rel="stylesheet"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./../tailwindconfig.js"></script>
+</head>
+
+<body class="bg-black-100">
+
+    <main class="container mx-auto">
+        <!-- bagian nav untuk tab -->
+
+        <!-- jumbotron mobile -->
+        <section class="py-20 mx-auto opacity-80">
+            <h1 class="w-1/2 mx-auto text-center text-neutral-white font-bold text-3xl ">Peminjaman Barang</h1>
+        </section>
+
+        <section class="pt-10">
+            <div class="flex justify-end gap-4 mx-8 md:mx-2">
+                <input class="block rounded-md px-2 py-3 w-full md:w-1/4" placeholder="Cari Barang.." type="text"
+                    id="mySearch" onkeyup="search">
+
+                <button class="search w-16 md:w-14">
+                    <img src="../assets/filter-alur.svg" alt="">
+                </button>
+            </div>
+
+            <article class="grid grid-cols-1 md:grid-cols-4 mx-2 my-3" id="listbarang" onkeyup="search()">
+                <button
+                    class="barang font-bold my-2 mx-2 rounded-lg text-left lg:pb-3 hover:translate-y-1 duration-500">
+
+                    <div class="flex md:block rounded-lg bg-white ">
+
+                        <div class="w-1/2 md:w-full h-auto md:h-full">
+                            <img src="../assets/barang.jpg" alt="Gambar"
+                                class="w-full h-full object-cover rounded-l-lg lg:rounded-l-none lg:rounded-t-lg aspect-video lg:aspect-square lg:object-contain">
+                        </div>
+                        <div
+                            class="w-1/2 px-8 py-8 lg:py-0 lg:px-0 lg:pb-4 md:w-full rounded-r-lg lg:rounded-none lg:rounded-b-lg grid bg-yellow-100">
+                            <div class="w-full lg:bg-white">
+                                <h2 class="text-xl text-black-100 lg:px-3">Barang xx</h2>
+                                <p class="text-black-100 lg:px-3">Status</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </button>
+                <button
+                    class="barang font-bold my-2 mx-2 rounded-lg text-left lg:pb-3 hover:translate-y-1 duration-500">
+
+                    <div class="flex md:block rounded-lg bg-white ">
+
+                        <div class="w-1/2 md:w-full h-auto md:h-full">
+                            <img src="../assets/barang.jpg" alt="Gambar"
+                                class="w-full h-full object-cover rounded-l-lg lg:rounded-l-none lg:rounded-t-lg aspect-video lg:aspect-square lg:object-contain">
+                        </div>
+                        <div
+                            class="w-1/2 px-8 py-8 lg:py-0 lg:px-0 lg:pb-4 md:w-full rounded-r-lg lg:rounded-none lg:rounded-b-lg grid bg-yellow-100">
+                            <div class="w-full lg:bg-white">
+                                <h2 class="text-xl text-black-100 lg:px-3">Barang xx</h2>
+                                <p class="text-black-100 lg:px-3">Status</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </button>
+                <button
+                    class="barang font-bold my-2 mx-2 rounded-lg text-left lg:pb-3 hover:translate-y-1 duration-500">
+
+                    <div class="flex md:block rounded-lg bg-white ">
+
+                        <div class="w-1/2 md:w-full h-auto md:h-full">
+                            <img src="../assets/barang.jpg" alt="Gambar"
+                                class="w-full h-full object-cover rounded-l-lg lg:rounded-l-none lg:rounded-t-lg aspect-video lg:aspect-square lg:object-contain">
+                        </div>
+                        <div
+                            class="w-1/2 px-8 py-8 lg:py-0 lg:px-0 lg:pb-4 md:w-full rounded-r-lg lg:rounded-none lg:rounded-b-lg grid bg-yellow-100">
+                            <div class="w-full lg:bg-white">
+                                <h2 class="text-xl text-black-100 lg:px-3">Barang xx</h2>
+                                <p class="text-black-100 lg:px-3">Status</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </button>
+                <button
+                    class="barang font-bold my-2 mx-2 rounded-lg text-left lg:pb-3 hover:translate-y-1 duration-500">
+
+                    <div class="flex md:block rounded-lg bg-white ">
+
+                        <div class="w-1/2 md:w-full h-auto md:h-full">
+                            <img src="../assets/barang.jpg" alt="Gambar"
+                                class="w-full h-full object-cover rounded-l-lg lg:rounded-l-none lg:rounded-t-lg aspect-video lg:aspect-square lg:object-contain">
+                        </div>
+                        <div
+                            class="w-1/2 px-8 py-8 lg:py-0 lg:px-0 lg:pb-4 md:w-full rounded-r-lg lg:rounded-none lg:rounded-b-lg grid bg-yellow-100">
+                            <div class="w-full lg:bg-white">
+                                <h2 class="text-xl text-black-100 lg:px-3">Barang xx</h2>
+                                <p class="text-black-100 lg:px-3">Status</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </button>
+                <button
+                    class="barang font-bold my-2 mx-2 rounded-lg text-left lg:pb-3 hover:translate-y-1 duration-500">
+
+                    <div class="flex md:block rounded-lg bg-white ">
+
+                        <div class="w-1/2 md:w-full h-auto md:h-full">
+                            <img src="../assets/barang.jpg" alt="Gambar"
+                                class="w-full h-full object-cover rounded-l-lg lg:rounded-l-none lg:rounded-t-lg aspect-video lg:aspect-square lg:object-contain">
+                        </div>
+                        <div
+                            class="w-1/2 px-8 py-8 lg:py-0 lg:px-0 lg:pb-4 md:w-full rounded-r-lg lg:rounded-none lg:rounded-b-lg grid bg-yellow-100">
+                            <div class="w-full lg:bg-white">
+                                <h2 class="text-xl text-black-100 lg:px-3">Barang xx</h2>
+                                <p class="text-black-100 lg:px-3">Status</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </button>
+                <button
+                    class="barang font-bold my-2 mx-2 rounded-lg text-left lg:pb-3 hover:translate-y-1 duration-500">
+
+                    <div class="flex md:block rounded-lg bg-white ">
+
+                        <div class="w-1/2 md:w-full h-auto md:h-full">
+                            <img src="../assets/barang.jpg" alt="Gambar"
+                                class="w-full h-full object-cover rounded-l-lg lg:rounded-l-none lg:rounded-t-lg aspect-video lg:aspect-square lg:object-contain">
+                        </div>
+                        <div
+                            class="w-1/2 px-8 py-8 lg:py-0 lg:px-0 lg:pb-4 md:w-full rounded-r-lg lg:rounded-none lg:rounded-b-lg grid bg-yellow-100">
+                            <div class="w-full lg:bg-white">
+                                <h2 class="text-xl text-black-100 lg:px-3">Barang xx</h2>
+                                <p class="text-black-100 lg:px-3">Status</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </button>
+                <button
+                    class="barang font-bold my-2 mx-2 rounded-lg text-left lg:pb-3 hover:translate-y-1 duration-500">
+
+                    <div class="flex md:block rounded-lg bg-white ">
+
+                        <div class="w-1/2 md:w-full h-auto md:h-full">
+                            <img src="../assets/barang.jpg" alt="Gambar"
+                                class="w-full h-full object-cover rounded-l-lg lg:rounded-l-none lg:rounded-t-lg aspect-video lg:aspect-square lg:object-contain">
+                        </div>
+                        <div
+                            class="w-1/2 px-8 py-8 lg:py-0 lg:px-0 lg:pb-4 md:w-full rounded-r-lg lg:rounded-none lg:rounded-b-lg grid bg-yellow-100">
+                            <div class="w-full lg:bg-white">
+                                <h2 class="text-xl text-black-100 lg:px-3">Barang xx</h2>
+                                <p class="text-black-100 lg:px-3">Status</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </button>
+                <button
+                    class="barang font-bold my-2 mx-2 rounded-lg text-left lg:pb-3 hover:translate-y-1 duration-500">
+
+                    <div class="flex md:block rounded-lg bg-white ">
+
+                        <div class="w-1/2 md:w-full h-auto md:h-full">
+                            <img src="../assets/barang.jpg" alt="Gambar"
+                                class="w-full h-full object-cover rounded-l-lg lg:rounded-l-none lg:rounded-t-lg aspect-video lg:aspect-square lg:object-contain">
+                        </div>
+                        <div
+                            class="w-1/2 px-8 py-8 lg:py-0 lg:px-0 lg:pb-4 md:w-full rounded-r-lg lg:rounded-none lg:rounded-b-lg grid bg-yellow-100">
+                            <div class="w-full lg:bg-white">
+                                <h2 class="text-xl text-black-100 lg:px-3">Barang xx</h2>
+                                <p class="text-black-100 lg:px-3">Status</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </button>
+
+
+            </article>
+        </section>
+
+        <script>
+            function search() {
+                var input, filter, listbarang, barang, i, txtValue;
+                input = document.getElementById("mySearch");
+                filter = input.value.toUpperCase();
+                listbarang = document.getElementById("listbarang");
+                barang = listbarang.getElementsByClassName("barang");
+
+                for (i = 0; i < barang.length; i++) {
+                    var txtValue = barang[i].querySelector("h2").textContent || barang[i].querySelector("h2").innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        barang[i].classList.remove("visually-hidden");
+                    } else {
+                        barang[i].classList.add("visually-hidden");
+                    }
+                }
+            }
+        </script>
+
+    </main>
+    <footer class="mt-36"></footer>
+</body>
+
+</html>

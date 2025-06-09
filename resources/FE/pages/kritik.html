@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kritik dan Saran</title>
+    <!-- <link rel="stylesheet" href="../css/kritik.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./../tailwindconfig.js"></script>
+</head>
+
+<body class="bg-black-100">
+    <main class="bg-cycle-profil bg-no-repeat bg-left bg-contain md:bg-none">
+        <header class="h-40 flex flex-col m-2">
+            <h1 class="text-left my-auto text-3xl font-bold text-white md:text-center md:text-4xl">
+                Kritik & Saran</h1>
+        </header>
+        <section class="m-2">
+            <form
+                action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfZQd5g55udUl68V4O6buMp8vcE24tqQnqSMEpmShE8x236Vw/formResponse"
+                method="post">
+                <div
+                    class="my-2 flex flex-col border-2 border-yellow-100 p-2 text-white rounded-xl bg-black-100 max-w-lg mx-auto">
+                    <label for="prodi" class="mx-2 pb-2 font-semibold text-xl">Program Studi</label>
+                    <input type="text" value="Isikan Program Studi Anda" id="prodi"
+                        class="mx-2 bg-transparent border-b-2 text-black-75">
+                </div>
+
+                <div
+                    class="my-2 flex flex-col border-2 border-yellow-100 p-2 text-white rounded-xl bg-black-100 max-w-lg mx-auto">
+                    <label for="kns" class="mx-2 pb-2 font-semibold text-xl">Kritik & Saran</label>
+                    <input type="text" value="Isikan Kritik & Saran Anda" id="kns"
+                        class="mx-2 bg-transparent border-b-2 text-black-75">
+                </div>
+
+                <div
+                    class="my-2 flex flex-col border-2 border-yellow-100 p-2 text-white rounded-xl bg-black-100 max-w-lg mx-auto">
+                    <label for="homepage" class="mx-2 pb-2 font-semibold text-xl">Link Referensi</label>
+                    <input type="url" value="Isikan Link Referensi Anda" id="homepage" name="homepage" class="mx-2 bg-transparent border-b-2 text-black-75">
+                </div>
+
+                <div class="max-w-lg mx-auto">
+                    <input type="submit" value="Submit"
+                        class="bg-orange-100 text-xl py-3 px-5 text-white font-semibold rounded-xl">
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

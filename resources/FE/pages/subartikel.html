@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artikel\Kabar dari KM ITERA</title>
+    <!-- <link rel="stylesheet" href="./../css/kabarpage.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./../tailwindconfig.js"></script>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body class="bg-black-100">
+    <header class="sticky top-0 bg-black-100 p-5 z-50">
+        <nav class="lg:flex lg:items-center lg:justify-between">
+            <div class="flex justify-between items-center">
+                <div class=" bg-black-75 flex px-2 rounded shadow-lg shadow-black">
+                    <img src="./../assets/LogoKM.svg" alt="" class="h-12 my-auto" />
+                    <div class="flex">
+                        <h1 class="text-lg md:text-xl font-semibold my-auto text-neutral-white">KM ITERA</h1>
+                    </div>
+                </div>
+                <div class="border rounded-lg border-black-border p-2 lg:hidden flex">
+                    <div class="text-4xl cursor-pointer lg:hidden text-neutral-white flex flex-col content-center">
+                        <i class="fa-solid fa-bars" style="color: #ffffff;" onclick="Open('.menu-mobile')"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-mobile hidden transition-all duration-300 lg:flex">
+                <ul
+                    class="lg:flex lg:items-center text-neutral-white z-[-1] lg:z-auto lg:static absolute bg-black-100 w-full left-0 lg:w-auto pt-2 md:pt-10 lg:pt-0 transition-all ease-in duration-100">
+                    <li class="mx-2 my-6 md:my-0">
+                        <button href="#"
+                            class="text-xl text-black-75 duration-100 px-1 mr-1 block py-2">Beranda</button>
+                    </li>
+                    <li class="mx-2 my-6 md:my-0 md:relative">
+                        <button type="button" href="#"
+                            class="text-xl text-black-75 duration-100 px-1 mr-1 w-full text-start py-2"
+                            id="dropdown-toggle1">
+                            Profile
+                        </button>
+                        <div class="hidden text-black-75 bg-black-100 py-3 px-5 md:px-0 md:rounded md:absolute"
+                            id="dropdown-menu1">
+                            <ul class="md:py-3 md:w-60">
+                                <li class="p-2 md:px-5">
+                                    <a href="#" class="p-2 md:px-5 block">Kabinet</a>
+                                </li>
+                                <li class="p-2 md:px-5">
+                                    <a href="#" class="p-2 md:px-5 block">Organigram</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mx-2 my-6 md:my-0 md:relative">
+                        <button type="button" href="#"
+                            class="text-xl text-black-75 duration-100 px-1 mr-1 w-full text-start py-2"
+                            id="dropdown-toggle2">
+                            Satu Data Itera
+                        </button>
+                        <div class="hidden text-black-75 bg-black-100 py-3 px-5 md:px-0 md:rounded md:absolute"
+                            id="dropdown-menu2">
+                            <ul class="md:py-3 md:w-60">
+                                <li class="p-2 md:px-5">
+                                    <a href="#" class="p-2 md:px-5 block">Beasiswa</a>
+                                </li>
+                                <li class="p-2 md:px-5">
+                                    <a href="#" class="p-2 md:px-5 block">KP dan Alumni</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mx-2 my-6 md:my-0 md:relative">
+                        <button type="button" href="#"
+                            class="text-xl text-black-75 duration-100 px-1 mr-1 w-full text-start py-2"
+                            id="dropdown-toggle3">
+                            Alur Sistem
+                        </button>
+                        <div class="hidden text-black-75 bg-black-100 py-3 px-5 md:px-0 md:rounded md:absolute"
+                            id="dropdown-menu3">
+                            <ul class="md:py-3 md:w-60">
+                                <li class="p-2 md:px-5">
+                                    <a href="#" class="p-2 md:px-5 block">Banding UKT</a>
+                                </li>
+                                <li class="p-2 md:px-5">
+                                    <a href="#" class="p-2 md:px-5 block">PIK-R</a>
+                                </li>
+                                <li class="p-2 md:px-5">
+                                    <a href="#" class="p-2 md:px-5 block">Sukma KM ITERA</a>
+                                </li>
+                                <li class="p-2 md:px-5">
+                                    <a href="#" class="p-2 md:px-5 block">Peminjaman</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mx-2 my-6 md:my-0">
+                        <a href="#" class="text-xl text-black-75 duration-100 px-1 mr-1 block py-2">Arsip Publik</a>
+                    </li>
+                    <li class="mx-2 my-6 md:my-0">
+                        <a href="#" class="text-xl text-black-75 duration-100 px-1 mr-1 block py-2">Kritik dan Saran</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container mx-auto pt-5">
+        <!-- Jumbotron -->
+        <figure class="bg-jumbotron-kabar rounded-xl h-96 w-full relative bg-cover bg-center bg-no-repeat md:h-[80vh]">
+            <p class="absolute bottom-7 font-bold text-neutral-white m-5 text-sm md:text-base lg:text-lg">
+                Ikatan Hapkido ITERA Borong 9 Medali dalam Kejuaraan Daerah Hapkido Lampung
+            </p>
+            <span class="absolute bottom-0 text-neutral-white m-5 text-sm md:text-base lg:text-lg">June, 15 2023</span>
+        </figure>
+        <article>
+            <section class="my-10">
+                <h1 class="text-neutral-white font-extrabold my-5">Ikatan Hapkido ITERA Borong 9 Medali dalam Kejuaraan
+                    Daerah Hapkido
+                    Lampung</h1>
+                <p class="text-neutral-white my-2">June, 15 2023</p>
+                <p class="text-neutral-white my-2">Kategori</p>
+            </section>
+
+            <section>
+                <p class="text-neutral-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore esse
+                    blanditiis exercitationem
+                    distinctio voluptatum odio dolor cumque quisquam optio quam! Iste, quasi nostrum. Placeat ducimus
+                    quae reiciendis iste similique sapiente.
+                    Totam accusamus quos doloribus distinctio laboriosam, dolorem ea adipisci! Temporibus doloremque sed
+                    eos at, ipsa id fugiat voluptas odio optio fuga totam nihil aliquid nobis quasi, laborum et sunt
+                    quaerat?
+                    Exercitationem facilis illo eius numquam sit delectus nulla mollitia provident non, officia autem
+                    neque quidem quisquam itaque quibusdam nam reiciendis. Optio ex nesciunt at quaerat veritatis enim
+                    expedita dolores modi.
+                    Asperiores, tempora voluptas. Similique, sint optio nesciunt beatae error aperiam eos ullam tempora
+                    dignissimos deleniti veniam voluptatibus excepturi totam repellendus vero accusamus quos impedit
+                    dolore! Eius debitis maxime ullam repudiandae?
+                    Quidem velit dolorum assumenda consectetur quos veniam excepturi, necessitatibus iste doloribus
+                    quod, amet veritatis repellendus eveniet architecto magni aperiam esse quibusdam illo ratione?
+                    Aspernatur exercitationem placeat nihil necessitatibus. Aut, architecto.
+                    Nostrum iure doloribus aliquam? Quis earum totam minima eveniet velit obcaecati dolores odio at
+                    deserunt officiis. Temporibus eaque impedit fugiat maiores ullam, quos nulla? Beatae in rem
+                    repellendus fugit blanditiis?
+                    Pariatur quia assumenda odit asperiores eveniet vero! Optio eligendi illo sed fugiat? Ipsa illum cum
+                    doloremque reiciendis, odio nihil facilis pariatur, accusamus, voluptas laboriosam hic autem dolorum
+                    ad vero nulla.
+                    Voluptas sapiente, nisi illo iure provident aperiam mollitia rerum ex tenetur inventore explicabo
+                    cupiditate aliquid sed id! Eligendi totam molestiae, dolores deserunt sequi iusto eos at inventore
+                    culpa, veniam corrupti.
+                    Earum quia a delectus possimus rem enim aut, qui, quos necessitatibus ipsum in dicta vero blanditiis
+                    voluptate quaerat quas laboriosam debitis repellat! Quo, incidunt non temporibus consectetur saepe
+                    maxime est?
+                    Incidunt sapiente officiis ipsa aspernatur voluptates, aperiam eaque hic error, reprehenderit, modi
+                    consequuntur sint magni dicta sunt ea ad? Expedita eaque blanditiis nulla doloribus adipisci!
+                    Consectetur perferendis tempora sed quas.
+                    Enim natus facere officia autem provident perferendis quo accusamus cum iure. Est totam quidem in
+                    veniam earum tenetur sit minima dolor placeat soluta beatae mollitia dolore, culpa sunt delectus
+                    neque!
+                    Officiis, similique quia exercitationem numquam molestiae dignissimos suscipit! Esse dolorum
+                    voluptates saepe obcaecati rerum! Nostrum, libero ea beatae ipsa recusandae deserunt! Officia
+                    laborum laboriosam asperiores accusamus provident a dolorem fugiat.
+                    Unde iusto fugit id voluptates corporis optio cumque architecto, numquam excepturi autem fugiat
+                    accusantium voluptatum, modi omnis nemo animi! Veritatis, facilis deleniti. Tenetur reprehenderit at
+                    laboriosam enim! Qui, nobis voluptatum?
+                    Ut veniam excepturi ex voluptatum sapiente quod animi magnam praesentium commodi alias, modi
+                    asperiores blanditiis! Rerum voluptate sit soluta asperiores, nesciunt maxime temporibus magni id.
+                    Nam iste placeat quae quisquam.
+                    Nobis placeat eum facere, ratione quisquam nemo eaque dolore fuga velit laborum numquam itaque
+                    consequuntur asperiores voluptatum minus possimus? Esse consequatur nam expedita ullam repudiandae
+                    nemo officia? Necessitatibus, alias culpa?
+                    Delectus, quo illo vero tempore consequuntur inventore, cum quam sunt hic impedit neque vel corrupti
+                    ipsum esse dolore earum quibusdam nulla eius. Repudiandae beatae laudantium obcaecati consequuntur
+                    similique accusamus animi!
+                    Iusto repellat, laborum porro velit dolore optio vel voluptatem quam est repellendus enim molestias,
+                    provident animi ad! Iure facere consequuntur accusamus architecto magni voluptas deserunt aliquid
+                    alias obcaecati! Alias, consectetur!
+                    Voluptas, beatae a hic assumenda in laboriosam dolores odio reiciendis facilis debitis sunt
+                    aspernatur quam tenetur voluptatibus quidem. Tenetur assumenda deleniti nihil asperiores dignissimos
+                    aliquid ipsa quo quas molestias ullam?
+                    Aspernatur ipsa quaerat nesciunt debitis, odio voluptatem numquam corporis dignissimos nisi, officia
+                    eum eius nihil necessitatibus quidem vitae non ipsum sed ipsam perspiciatis sapiente eos! Maxime,
+                    nisi! Reiciendis, temporibus illo.
+                    Ut dolores nostrum beatae cum, quasi atque voluptatem iusto minus? Dolorem modi itaque quaerat natus
+                    nisi? Quia, dicta? Quo eum sunt fuga deleniti, accusantium assumenda animi est enim! Obcaecati,
+                    libero.
+                    Natus, ab? Animi aperiam sapiente eveniet suscipit dicta tenetur quia autem accusantium sint,
+                    cupiditate reiciendis totam molestias, similique voluptatibus earum dolores possimus? Incidunt unde
+                    enim ullam cum deleniti aperiam consequuntur!
+                    Illum, suscipit optio? Porro impedit possimus debitis, minima quis vel laudantium consequuntur omnis
+                    totam officia expedita vero adipisci rerum nesciunt in vitae molestiae natus saepe quos a illo!
+                    Saepe, illo.
+                    Delectus architecto, culpa alias eum pariatur libero similique odio cumque quis impedit nisi
+                    voluptatibus debitis, perspiciatis, adipisci temporibus repellat! Molestias voluptates cupiditate
+                    eum quas quam perferendis delectus consequuntur vel aliquid.
+                    Perferendis necessitatibus accusamus eveniet rerum numquam vitae. Molestiae esse vel explicabo,
+                    dolorum exercitationem nihil corporis obcaecati enim facere optio pariatur, atque illo sit officia
+                    libero, expedita cum nam recusandae praesentium.
+                    Libero repellat qui sequi voluptatem, minima quasi. In culpa accusantium nesciunt earum alias
+                    tempore accusamus perferendis quas, quis numquam aperiam possimus animi fuga laudantium blanditiis
+                    nostrum porro inventore placeat error.
+                    Reprehenderit architecto unde illum, dolores suscipit facere ullam doloribus natus saepe blanditiis
+                    distinctio totam aspernatur minima enim veniam odio culpa placeat optio. Dolorum iusto
+                    exercitationem, voluptatem eveniet aperiam excepturi iure?
+                    Reiciendis laudantium illo ad pariatur natus eligendi velit distinctio facilis corrupti, fugit
+                    architecto minima animi corporis quod saepe exercitationem, maxime odio placeat quia officia nulla!
+                    Sequi ullam asperiores repudiandae dolorum.
+                    Voluptates magnam esse iure laborum unde, doloribus maiores commodi exercitationem distinctio quo,
+                    nulla veritatis officia culpa sunt quas modi eos earum illum nobis cum eveniet totam. Ullam
+                    voluptate maiores omnis.
+                    Esse voluptate exercitationem maiores ipsam inventore debitis cum sapiente sit, veritatis eligendi
+                    quae tenetur optio nemo voluptas, libero pariatur eius quis. Neque reprehenderit voluptates a
+                    consequuntur sequi sunt praesentium laboriosam.
+                    Accusantium architecto neque illo velit? Ex reprehenderit alias eaque earum accusamus praesentium
+                    assumenda libero labore atque nemo natus consectetur officiis sed temporibus tempore cumque magnam,
+                    ipsum corporis consequuntur unde tempora.
+                    Ipsam aspernatur magnam quo animi pariatur ipsa esse minima quas impedit in, ut quaerat vel fugiat
+                    nesciunt natus ad repellat numquam hic vitae dolore obcaecati iure! Quis sunt nam possimus.
+                    Quis quo reiciendis nam molestiae commodi molestias atque delectus. Ab veritatis voluptatem
+                    reprehenderit nisi a officia, incidunt nulla quisquam. Cum similique explicabo id ipsam provident
+                    aperiam officiis dolor nobis fuga.
+                    Voluptates explicabo repellat, totam laudantium obcaecati id omnis fuga aliquam, sequi illum
+                    adipisci perferendis optio sapiente molestias molestiae aliquid cumque ea fugit ipsa! Nostrum
+                    quaerat obcaecati dolorum excepturi eveniet suscipit.
+                    Iure omnis magnam, voluptatibus obcaecati impedit vel, autem magni hic quidem saepe amet deleniti.
+                    Voluptatum modi incidunt, tenetur repellat vel id blanditiis sint repudiandae ipsam, tempora,
+                    inventore eos placeat neque.
+                    Corrupti doloribus possimus consequatur quis a doloremque quo dolorem explicabo. Fuga obcaecati
+                    quasi laudantium sapiente hic explicabo quo voluptatibus ipsa officiis, facere dicta iusto, dolorum
+                    cupiditate rem veniam doloribus excepturi.
+                    Accusantium voluptates illum corrupti eius corporis sed ex fugiat quis, unde eveniet in itaque
+                    accusamus ea velit sit hic eligendi quia commodi quidem tenetur ullam, cumque eaque. Praesentium,
+                    repellendus explicabo.
+                    Vero, magni. Autem quis itaque quos suscipit, laboriosam fuga a nulla modi earum, ut repudiandae
+                    temporibus cum totam beatae dolores nemo doloremque voluptatum ea sint eaque voluptatem. Rem, rerum
+                    labore?
+                    Minima asperiores in culpa omnis vero fugit totam ab amet incidunt quia laudantium, aperiam hic
+                    rerum tempora atque accusamus enim nemo impedit inventore assumenda itaque vel qui quas. Doloremque,
+                    incidunt.
+                    Iure accusantium, odio molestias, quam dignissimos cum perspiciatis rerum repellendus mollitia
+                    adipisci, id quod maxime est ipsam nostrum cumque similique? Sapiente minus ex sit suscipit tempore
+                    eveniet cumque quos obcaecati.
+                    Labore, cupiditate omnis. Voluptatibus, consequuntur aliquam quam id ut tempore autem ullam
+                    excepturi sint eligendi temporibus reprehenderit aliquid at quibusdam vero nobis dignissimos quod,
+                    sequi debitis voluptatem soluta nam harum!
+                </p>
+            </section>
+        </article>
+    </main>
+    <footer class="bg-black-100 py-2 text-black-75 w-full">
+        <div class="flex justify-between">
+            <div class="flex justify-between items-center">
+                <img src="./../assets/LogoKM.svg" alt="" class="h-20 px-2 md:h-24 lg:h-32 md:px-5 lg:px-8" />
+            </div>
+            <div class="flex flex-col content-center px-2 md:px-3 lg:px-5">
+                <ul class="flex justify-around my-auto">
+                    <a href="">
+                        <li class="flex text-2xl mx-3 lg:text-4xl md:mx-5 lg:mx-8">
+                            <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                        </li>
+                    </a>
+                    <a href="">
+                        <li class="flex text-2xl mx-3 lg:text-4xl md:mx-5 lg:mx-8">
+                            <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                        </li>
+                    </a>
+                    <a href="">
+                        <li class="flex text-2xl mx-3 lg:text-4xl md:mx-5 lg:mx-8">
+                            <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
+                        </li>
+                    </a>
+                    <a href="">
+                        <li class="flex text-2xl mx-3 lg:text-4xl md:mx-5 lg:mx-8">
+                            <i class="fa-brands fa-spotify" style="color: #ffffff;"></i>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div class="px-2 md:px-5 lg:px-8">
+            <p class="text-sm text-left md:text-base lg:text-lg md:py-1 lg:py-2">
+                &copy;2023 Kementrian Teknologi Informasi.
+            </p>
+            <p class="text-sm text-left md:text-base lg:text-lg md:py-1 lg:py-2"> All rights
+                reserved.
+            </p>
+        </div>
+    </footer>
+    <!-- script -->
+    <script src="./../../js/navbar.js"></script>
+</body>
+
+</html>

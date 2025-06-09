@@ -1,0 +1,20 @@
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="gala:search" clip-path="url(#clip0_40_922)">
+<g id="Group">
+<path id="Vector" d="M17.0726 19.6207L25.0617 27.6098" stroke="black" stroke-width="3"/>
+<path id="Vector_2" d="M19.674 17.0193L27.6631 25.0084" stroke="black" stroke-width="3"/>
+<path id="Vector_3" d="M27.6631 25.0084C28.008 25.3534 28.2018 25.8212 28.2018 26.3091C28.2018 26.797 28.008 27.2648 27.6631 27.6098" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M25.0617 27.6098C25.4066 27.9548 25.8745 28.1486 26.3624 28.1486C26.8502 28.1486 27.3181 27.9548 27.6631 27.6098" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_5" d="M10.1881 1.85724C11.2752 1.85724 12.3515 2.07134 13.3558 2.48733C14.3601 2.90332 15.2726 3.51305 16.0413 4.28169C16.8099 5.05034 17.4196 5.96286 17.8356 6.96714C18.2516 7.97143 18.4657 9.04781 18.4657 10.1348C18.4657 11.2219 18.2516 12.2983 17.8356 13.3025C17.4196 14.3068 16.8099 15.2193 16.0413 15.988C15.2726 16.7566 14.3601 17.3664 13.3558 17.7824C12.3515 18.1983 11.2752 18.4124 10.1881 18.4124C7.99277 18.4124 5.88733 17.5403 4.33498 15.988C2.78262 14.4356 1.91052 12.3302 1.91052 10.1348C1.91052 9.04781 2.12463 7.97143 2.54062 6.96714C2.95661 5.96286 3.56633 5.05034 4.33498 4.28169C5.10362 3.51305 6.01614 2.90332 7.02042 2.48733C8.02471 2.07134 9.1011 1.85724 10.1881 1.85724Z" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_6" d="M17.0726 19.6207L19.674 17.0193" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_7" d="M18.3733 18.32L16.0413 15.988" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_8" d="M19.293 21.8412L21.8944 19.2398" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_9" d="M10.1881 5.53619C11.4078 5.53619 12.5774 6.02069 13.4399 6.88311C14.3023 7.74553 14.7868 8.91521 14.7868 10.1349" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_40_922">
+<rect width="30" height="30" fill="white"/>
+</clipPath>
+</defs>
+</svg>

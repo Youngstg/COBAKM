@@ -1,0 +1,24 @@
+/* Hide scrollbar for Chrome, Safari and Opera */
+.carousel-card::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.carousel-card {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.shadow-top {
+    height: 40px;
+    position: absolute;
+    background: -webkit-linear-gradient(270deg, rgba(0, 0, 0, 1), transparent);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent);
+}
+
+.shadow-bottom {
+    height: 40px;
+    position: absolute;
+    background: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 1), transparent);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), transparent);
+}

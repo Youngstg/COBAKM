@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artikel</title>
+    <!-- <link rel="stylesheet" href="./../css/kabar.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./../tailwindconfig.js"></script>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body class="bg-black-100">
+    <header class="sticky top-0 bg-black-100 p-5 z-50">
+        <nav class="lg:flex lg:items-center lg:justify-between">
+            <div class="flex justify-between items-center">
+                <div class=" bg-black-75 flex px-2 rounded shadow-lg shadow-black">
+                    <img src="./../assets/LogoKM.svg" alt="" class="h-12 my-auto" />
+                    <div class="flex">
+                        <h1 class="text-lg md:text-xl font-semibold my-auto text-neutral-white">KM ITERA</h1>
+                    </div>
+                </div>
+                <div class="border rounded-lg border-black-border p-2 lg:hidden flex">
+                    <div class="text-4xl cursor-pointer lg:hidden text-neutral-white flex flex-col content-center">
+                        <i class="fa-solid fa-bars" style="color: #ffffff;" onclick="Open('.menu-mobile')"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-mobile hidden transition-all duration-300 lg:flex">
+                <ul
+                    class="lg:flex lg:items-center text-neutral-white z-[-1] lg:z-auto lg:static absolute bg-black-100 w-full left-0 lg:w-auto pt-2 md:pt-10 lg:pt-0 transition-all ease-in duration-100">
+                    <li class="mx-2 my-6 md:my-0">
+                        <button href="#"
+                            class="text-xl text-black-75 duration-100 px-1 mr-1 block py-2">Beranda</button>
+                    </li>
+                    <li class="mx-2 my-6 md:my-0 md:relative">
+                        <button type="button" href="#"
+                            class="text-xl text-black-75 duration-100 px-1 mr-1 w-full text-start py-2"
+                            id="dropdown-toggle1">
+                            Profile
+                        </button>
+                        <div class="hidden text-black-75 bg-black-100 py-3 px-5 md:px-0 md:rounded md:absolute"
+                            id="dropdown-menu1">
+                            <ul class="md:py-3 md:w-60">
+                                <li class="p-2 md:px-5">
+                                    <a href="#" class="p-2 md:px-5 block">Kabinet</a>
+                                </li>
+                                <li class="p-2 md:px-5">
+                                    <a href="#" class="p-2 md:px-5 block">Organigram</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mx-2 my-6 md:my-0 md:relative">
+                        <button type="button" href="#"
+                            class="text-xl text-black-75 duration-100 px-1 mr-1 w-full text-start py-2"
+                            id="dropdown-toggle2">
+                            Satu Data Itera
+                        </button>
+                        <div class="hidden text-black-75 bg-black-100 py-3 px-5 md:px-0 md:rounded md:absolute"
+                            id="dropdown-menu2">
+                            <ul class="md:py-3 md:w-60">
+                                <li class="p-2 md:px-5">
+                                    <a href="#" class="p-2 md:px-5 block">Beasiswa</a>
+                                </li>
+                                <li class="p-2 md:px-5">
+                                    <a href="#" class="p-2 md:px-5 block">KP dan Alumni</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mx-2 my-6 md:my-0 md:relative">
+                        <button type="button" href="#"
+                            class="text-xl text-black-75 duration-100 px-1 mr-1 w-full text-start py-2"
+                            id="dropdown-toggle3">
+                            Alur Sistem
+                        </button>
+                        <div class="hidden text-black-75 bg-black-100 py-3 px-5 md:px-0 md:rounded md:absolute"
+                            id="dropdown-menu3">
+                            <ul class="md:py-3 md:w-60">
+                                <li class="p-2 md:px-5">
+                                    <a href="#" class="p-2 md:px-5 block">Banding UKT</a>
+                                </li>
+                                <li class="p-2 md:px-5">
+                                    <a href="#" class="p-2 md:px-5 block">PIK-R</a>
+                                </li>
+                                <li class="p-2 md:px-5">
+                                    <a href="#" class="p-2 md:px-5 block">Sukma KM ITERA</a>
+                                </li>
+                                <li class="p-2 md:px-5">
+                                    <a href="#" class="p-2 md:px-5 block">Peminjaman</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mx-2 my-6 md:my-0">
+                        <a href="#" class="text-xl text-black-75 duration-100 px-1 mr-1 block py-2">Arsip Publik</a>
+                    </li>
+                    <li class="mx-2 my-6 md:my-0">
+                        <a href="#" class="text-xl text-black-75 duration-100 px-1 mr-1 block py-2">Kritik dan Saran</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="w-full relative">
+        <!-- jumbotron-->
+        <section
+            class="h-96 bg-half-eclips bg-no-repeat bg-bottom md:bg-eclips-beranda md:bg-right lg:bg-right-top aspect-square relative w-full mx-auto">
+
+            <h1
+                class="text-neutral-white text-4xl leading-relaxed px-5 font-bold absolute inset-0 flex items-center justify-center text-center">
+                Kabar
+                dari KM ITERA</h1>
+
+        </section>
+        <article class="grid grid-cols-1 gap-y-5 justify-center md:grid-cols-2 px-3 xl:grid-cols-3 gap-x-3 py-10">
+            <a href="./kabarpage.html"
+                class="h-40 md:h-48 relative justify-center snap-center w-full flex grow-1 shrink-0 md:basis-1/2">
+                <img src="./../assets/Bg-kabar.png" alt="" class="box-content rounded-xl w-full mx-3">
+                <p class="absolute bottom-0 font-bold text-neutral-white m-5 text-sm md:text-base lg:text-lg">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, nihil.
+                </p>
+            </a>
+            <a href="./kabarpage.html"
+                class="h-40 md:h-48 relative justify-center snap-center w-full flex grow-1 shrink-0 md:basis-1/2">
+                <img src="./../assets/Bg-kabar.png" alt="" class="box-content rounded-xl w-full mx-3">
+                <p class="absolute bottom-0 font-bold text-neutral-white m-5 text-sm md:text-base lg:text-lg">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, nihil.
+                </p>
+            </a>
+            <a href="./kabarpage.html"
+                class="h-40 md:h-48 relative justify-center snap-center w-full flex grow-1 shrink-0 md:basis-1/2">
+                <img src="./../assets/Bg-kabar.png" alt="" class="box-content rounded-xl w-full mx-3">
+                <p class="absolute bottom-0 font-bold text-neutral-white m-5 text-sm md:text-base lg:text-lg">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, nihil.
+                </p>
+            </a>
+            <a href="./kabarpage.html"
+                class="h-40 md:h-48 relative justify-center snap-center w-full flex grow-1 shrink-0 md:basis-1/2">
+                <img src="./../assets/Bg-kabar.png" alt="" class="box-content rounded-xl w-full mx-3">
+                <p class="absolute bottom-0 font-bold text-neutral-white m-5 text-sm md:text-base lg:text-lg">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, nihil.
+                </p>
+            </a>
+
+        </article>
+    </main>
+    <footer class="bg-black-100 py-2 text-black-75 w-full">
+        <div class="flex justify-between">
+            <div class="flex justify-between items-center">
+                <img src="./../assets/LogoKM.svg" alt="" class="h-20 px-2 md:h-24 lg:h-32 md:px-5 lg:px-8" />
+            </div>
+            <div class="flex flex-col content-center px-2 md:px-3 lg:px-5">
+                <ul class="flex justify-around my-auto">
+                    <a href="">
+                        <li class="flex text-2xl mx-3 lg:text-4xl md:mx-5 lg:mx-8">
+                            <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                        </li>
+                    </a>
+                    <a href="">
+                        <li class="flex text-2xl mx-3 lg:text-4xl md:mx-5 lg:mx-8">
+                            <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                        </li>
+                    </a>
+                    <a href="">
+                        <li class="flex text-2xl mx-3 lg:text-4xl md:mx-5 lg:mx-8">
+                            <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
+                        </li>
+                    </a>
+                    <a href="">
+                        <li class="flex text-2xl mx-3 lg:text-4xl md:mx-5 lg:mx-8">
+                            <i class="fa-brands fa-spotify" style="color: #ffffff;"></i>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div class="px-2 md:px-5 lg:px-8">
+            <p class="text-sm text-left md:text-base lg:text-lg md:py-1 lg:py-2">
+                &copy;2023 Kementrian Teknologi Informasi.
+            </p>
+            <p class="text-sm text-left md:text-base lg:text-lg md:py-1 lg:py-2"> All rights
+                reserved.
+            </p>
+        </div>
+    </footer>
+    <!-- script -->
+    <script src="./../../js/navbar.js"></script>
+</body>
+
+</html>

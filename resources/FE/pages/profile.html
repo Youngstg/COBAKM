@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil</title>
+    <!-- <link href="./../css/profile.css" rel="stylesheet"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./../tailwindconfig.js"></script>
+    <link rel="stylesheet" href="./../../css/custom.css">
+</head>
+
+<body class="bg-black-100">
+    <main>
+        <!-- Jumbotron -->
+        <section
+            class=" h-96 lg:h-screen bg-half-eclips bg-no-repeat bg-bottom lg:bg-cycle-profil lg:bg-left aspect-square relative w-full">
+            <div class="title lg:hidden flex flex-col items-center justify-center h-96">
+                <h1 class="text-neutral-white text-4xl leading-relaxed px-5 font-bold text-center">
+                    Profil </h1>
+                <h1 class="text-neutral-white text-4xl leading-relaxed px-5 font-bold text-center">
+                    Kabinet </h1>
+            </div>
+            <div class="container lg:h-screen mx-auto flex items-center">
+                <div class="image w-[70vw] hidden lg:block">
+                    <img src="../assets/LogoKM.svg" class="hidden lg:inline-block" alt="">
+
+                </div>
+                <div class="w-full lg:mx-20 h-96 lg:h-[70vh] list relative carousel-card overflow-y-scroll">
+                    <ul class="block">
+                        <a href="/" class="block bg-orange-100/70 rounded-3xl px-7 pt mx-5 mt-5">
+                            <div
+                                class="h-card-saidata-mobile lg:h-44 bg-[url('../assets/BG-ITERA.png')] bg-center bg-cover rounded-3xl relative justify-center align-bottom">
+                                <img src="../assets/LogoKM.svg" class="w-20 lg:w-28 mx-auto" alt="">
+                                <p class=" font-bold text-neutral-white text-center">
+                                    Nama Kabinet
+                                </p>
+                            </div>
+                        </a>
+                        <a href="/" class="block bg-yellow-100/70 rounded-3xl px-7 pt mx-5 mt-5">
+                            <div
+                                class="h-card-saidata-mobile lg:h-44 bg-[url('../assets/BG-ITERA.png')] bg-center bg-cover rounded-3xl relative justify-center align-bottom">
+                                <img src="../assets/LogoKM.svg" class="w-20 lg:w-28 mx-auto" alt="">
+                                <p class=" font-bold text-neutral-white text-center">
+                                    Nama Kabinet
+                                </p>
+                            </div>
+                        </a>
+                        <a href="/" class="block bg-orange-100/70 rounded-3xl px-7 pt mx-5 mt-5">
+                            <div
+                                class="h-card-saidata-mobile lg:h-44 bg-[url('../assets/BG-ITERA.png')] bg-center bg-cover rounded-3xl relative justify-center align-bottom">
+                                <img src="../assets/LogoKM.svg" class="w-20 lg:w-28 mx-auto" alt="">
+                                <p class=" font-bold text-neutral-white text-center">
+                                    Nama Kabinet
+                                </p>
+                            </div>
+                        </a>
+                        <a href="/" class="block bg-yellow-100/70 rounded-3xl px-7 pt mx-5 mt-5">
+                            <div
+                                class="h-card-saidata-mobile lg:h-44 bg-[url('../assets/BG-ITERA.png')] bg-center bg-cover rounded-3xl relative justify-center align-bottom">
+                                <img src="../assets/LogoKM.svg" class="w-20 lg:w-28 mx-auto" alt="">
+                                <p class=" font-bold text-neutral-white text-center">
+                                    Nama Kabinet
+                                </p>
+                            </div>
+                        </a>
+                        <a href="/" class="block bg-orange-100/70 rounded-3xl px-7 pt mx-5 mt-5">
+                            <div
+                                class="h-card-saidata-mobile lg:h-44 bg-[url('../assets/BG-ITERA.png')] bg-center bg-cover rounded-3xl relative justify-center align-bottom">
+                                <img src="../assets/LogoKM.svg" class="w-20 lg:w-28 mx-auto" alt="">
+                                <p class=" font-bold text-neutral-white text-center">
+                                    Nama Kabinet
+                                </p>
+                            </div>
+                        </a>
+                        <a href="/" class="block bg-yellow-100/70 rounded-3xl px-7 pt mx-5 mt-5">
+                            <div
+                                class="h-card-saidata-mobile lg:h-44 bg-[url('../assets/BG-ITERA.png')] bg-center bg-cover rounded-3xl relative justify-center align-bottom">
+                                <img src="../assets/LogoKM.svg" class="w-20 lg:w-28 mx-auto" alt="">
+                                <p class=" font-bold text-neutral-white text-center">
+                                    Nama Kabinet
+                                </p>
+                            </div>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="mt-14 md:hidden"></footer>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script>
+
+        var scrollShadow = (function () {
+            var elem, width, height, offset,
+                shadowTop, shadowBottom,
+                timeout;
+
+            function initShadows() {
+                shadowTop = document.createElement("div");
+                shadowTop.classList.add("shadow-top");
+                elem.parentNode.insertBefore(shadowTop, elem.nextSibling);
+
+                shadowBottom = document.createElement("div");
+                shadowBottom.classList.add("shadow-bottom");
+                elem.parentNode.insertBefore(shadowBottom, elem.nextSibling);
+            }
+
+            function calcPosition() {
+                width = elem.offsetWidth;
+                height = elem.offsetHeight;
+                offset = elem.getBoundingClientRect();
+
+                shadowTop.style.width = width + "px";
+                shadowTop.style.top = (offset.top - 1) + "px";
+                shadowTop.style.left = offset.left + "px";
+
+                shadowBottom.style.width = width + "px";
+                shadowBottom.style.top = (offset.top + height - 38) + "px";
+                shadowBottom.style.left = offset.left + "px";
+            }
+
+            function addScrollListener() {
+                elem.removeEventListener("scroll", scrollHandler);
+                elem.addEventListener("scroll", scrollHandler);
+            }
+
+            function scrollHandler() {
+                if (elem.scrollTop > 0) {
+                    shadowTop.style.display = "block";
+                } else {
+                    shadowTop.style.display = "none";
+                }
+                if (elem.scrollTop + height >= elem.scrollHeight) {
+                    shadowBottom.style.display = "none";
+                } else {
+                    shadowBottom.style.display = "block";
+                }
+            }
+
+            function addResizeListener() {
+                window.removeEventListener("resize", resizeHandler);
+                window.addEventListener("resize", resizeHandler);
+            }
+
+            function resizeHandler() {
+                clearTimeout(timeout);
+                timeout = setTimeout(function () {
+                    calcPosition();
+                    scrollHandler();
+                }, 10);
+            }
+
+            return {
+                init: function (par) {
+                    elem = document.querySelector(par);
+                    initShadows();
+                    calcPosition();
+                    addScrollListener();
+                    addResizeListener();
+                    scrollHandler();
+                },
+                update: calcPosition
+            };
+        })();
+
+        // start
+        scrollShadow.init(".list");
+
+    </script>
+</body>
+
+</html>

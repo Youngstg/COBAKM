@@ -1,0 +1,29 @@
+/* CSS animation for fading out the splash screen */
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* Apply the animation to the splash screen */
+#splash-screen {
+    animation: fadeOut 1s ease-in-out forwards !important;
+}
+/* main,
+header,
+footer {
+    animation: fadeIn 0.5s ease-in-out forwards !important;
+} */
